@@ -1,0 +1,18 @@
+Step 1: Set Up Amazon DocumentDB
+Amazon DocumentDB is a managed MongoDB-compatible database.
+
+Go to Amazon DocumentDB → "Create Cluster"
+
+Choose:
+
+Engine version: MongoDB 4.0/5.0-compatible
+
+Instance type: db.t3.medium (or smaller for cost)
+
+VPC: Use the same VPC as your EC2
+
+Enable backup and monitoring
+
+Create a security group that allows inbound access from your EC2 instances only
+
+Note the cluster endpoint (use this in your app)
